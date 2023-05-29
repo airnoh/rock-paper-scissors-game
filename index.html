@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <div class="selections">
+        <div style="display: flex; ">
+            <button class="selection paper" onclick="playGame('paper')">🖐🏽 </button>
+            <button class="selection scissor" onclick="playGame('scissors')">✂️</button>
+        </div>
+        <div style="justify-content: center; display: flex;">
+            <button class="selection rock" onclick="playGame('rock')">✊🏽</button>
+        </div>
+    </div>
+    <div class="score">
+        <div>
+            You
+            <span class="result-score" id="player-score">0</span>
+        </div>
+        <div>
+            Computer
+            <span class="result-score" id="computer-score">0</span>
+        </div>
+    </div>
+    <div id="result">
+        <div class="result-selection win"></div>
+        <div class="result-selection wins"></div>
+    </div>
+    <p id="winner" style="display: flex; justify-content: center;"></p>
+</body>
+
+</html>
